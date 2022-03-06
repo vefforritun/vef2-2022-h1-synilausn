@@ -1,0 +1,762 @@
+{
+  "info": {
+    "_postman_id": "aa7c841a-204b-4d5a-b0f8-e4551cfec79f",
+    "name": "h1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"admin\",\n    \"password\": \"1234567890\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/users/login",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "users",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users/me",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/users/me",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "users",
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/users",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/users/1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/users/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "users",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH /users/me",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"admin1@example.org\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/users/me",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "users",
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/menu",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/menu",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "menu"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /menu",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "title",
+              "value": "test2",
+              "type": "text"
+            },
+            {
+              "key": "price",
+              "value": "1000",
+              "type": "text"
+            },
+            {
+              "key": "description",
+              "value": "test",
+              "type": "text"
+            },
+            {
+              "key": "category",
+              "value": "1",
+              "type": "text"
+            },
+            {
+              "key": "image",
+              "type": "file",
+              "src": "/Users/olafursverrirkjartansson/code/kennsla/vef2-2022-verkefni/vef2-2022-h1-synilausn/imgs/vita-marija-murenaite-eSeo6IzOV00-unsplash.jpg"
+            }
+          ],
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/menu",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "menu"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/menu?category=1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/menu/?category=1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "menu",
+            ""
+          ],
+          "query": [
+            {
+              "key": "category",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/menu?search=gums",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/menu?search=pizzan&category=5",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "menu"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "pizzan"
+            },
+            {
+              "key": "category",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/menu/1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/menu/18",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "menu",
+            "18"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH /menu/1",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"description\": \"test2\",\n    \"price\": \"1\",\n    \"category\": 20\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/menu/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "menu",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE /menu/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/menu/18",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "menu",
+            "18"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /categories",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/categories",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "categories"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /category",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"sdf\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/categories/",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "categories",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /category/:id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/categories/6",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "categories",
+            "6"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE /category/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/categories/6",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "categories",
+            "6"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /cart",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/cart",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "cart"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /cart/:id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/cart/dc98d15f-214f-4091-b295-d15d0f13c649",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "cart",
+            "dc98d15f-214f-4091-b295-d15d0f13c649"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE /cart/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/cart/e03b7590-2d6f-4b32-9b40-4f631c0474a9",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "cart",
+            "e03b7590-2d6f-4b32-9b40-4f631c0474a9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /cart/:id",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"product\": 5,\n    \"quantity\": 5\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/cart/56b750d1-d36f-414f-98ec-de2b8536ed39",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "cart",
+            "56b750d1-d36f-414f-98ec-de2b8536ed39"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /cart/:id/lines/:lineid",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"quantity\": 100\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/cart/0a69529a-f508-4a8b-b2e3-dae804abb7a2/line/2",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "cart",
+            "0a69529a-f508-4a8b-b2e3-dae804abb7a2",
+            "line",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH /cart/:id/lines/:lineid",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"quantity\": 100\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/cart/0a69529a-f508-4a8b-b2e3-dae804abb7a2/line/2",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "cart",
+            "0a69529a-f508-4a8b-b2e3-dae804abb7a2",
+            "line",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE /cart/:id/lines/:lineid",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/cart/0a69529a-f508-4a8b-b2e3-dae804abb7a2/line/4",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "cart",
+            "0a69529a-f508-4a8b-b2e3-dae804abb7a2",
+            "line",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/menu?offset=10&limit=10",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/menu?offset=10&limit=10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "menu"
+          ],
+          "query": [
+            {
+              "key": "offset",
+              "value": "10"
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "{{baseUrl}}/users/me",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/users/me",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "users",
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /orders",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"cart\": \"56b750d1-d36f-414f-98ec-de2b8536ed39\",\n    \"name\": \"test2\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/orders",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /orders",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/orders/",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "orders",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /orders/:id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/orders/56b750d1-d36f-414f-98ec-de2b8536ed39",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "orders",
+            "56b750d1-d36f-414f-98ec-de2b8536ed39"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /orders/:id/status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/orders/56b750d1-d36f-414f-98ec-de2b8536ed39/status",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "orders",
+            "56b750d1-d36f-414f-98ec-de2b8536ed39",
+            "status"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /orders/:id/status",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"status\": \"FINISHED\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/orders/56b750d1-d36f-414f-98ec-de2b8536ed39/status",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "orders",
+            "56b750d1-d36f-414f-98ec-de2b8536ed39",
+            "status"
+          ],
+          "query": [
+            {
+              "key": "status",
+              "value": "NEW",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQ2NDI5NzE2LCJleHAiOjE2NTAwMjk3MTZ9.8fo3SvUc63Lfh0QltyGFSXmxZ5A3kBRsGM4fFYTEFyE",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    },
+    {
+      "key": "baseUrl",
+      "value": "",
+      "type": "string",
+      "disabled": true
+    }
+  ]
+}

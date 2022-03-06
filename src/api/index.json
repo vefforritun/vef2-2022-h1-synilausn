@@ -1,0 +1,157 @@
+[
+  {
+    "href": "/orders/id",
+    "type": "ws",
+    "authenticated": false
+  },
+  {
+    "href": "/admin",
+    "type": "ws",
+    "authenticated": true
+  },
+  {
+    "href": "/menu/?category={id}&search={string}",
+    "type": "http",
+    "methods": [
+      "GET"
+    ],
+    "authenticated": false
+  },
+  {
+    "href": "/menu",
+    "type": "http",
+    "methods": [
+      "POST"
+    ],
+    "authenticated": true
+  },
+  {
+    "href": "/menu/{id}",
+    "type": "http",
+    "methods": [
+      "GET"
+    ],
+    "authenticated": false
+  },
+  {
+    "href": "/menu/{id}",
+    "type": "http",
+    "methods": [
+      "PATCH",
+      "DELETE"
+    ],
+    "authenticated": true
+  },
+  {
+    "href": "/categories",
+    "type": "http",
+    "methods": [
+      "GET"
+    ],
+    "authenticated": false
+  },
+  {
+    "href": "/categories/{id}",
+    "type": "http",
+    "methods": [
+      "PATCH",
+      "DELETE"
+    ],
+    "authenticated": true
+  },
+  {
+    "href": "/cart",
+    "type": "http",
+    "methods": [
+      "POST"
+    ],
+    "authenticated": false
+  },
+  {
+    "href": "/cart/{id}",
+    "type": "http",
+    "methods": [
+      "GET",
+      "POST",
+      "DELETE"
+    ],
+    "authenticated": false
+  },
+  {
+    "href": "/cart/{id}/line/{lineid}",
+    "type": "http",
+    "methods": [
+      "GET",
+      "PATCH",
+      "DELETE"
+    ],
+    "authenticated": false
+  },
+  {
+    "href": "/orders",
+    "type": "http",
+    "methods": [
+      "POST"
+    ],
+    "authenticated": false
+  },
+  {
+    "href": "/orders/{id}",
+    "type": "http",
+    "methods": [
+      "GET"
+    ],
+    "authenticated": true
+  },
+  {
+    "href": "/orders/{id}/status",
+    "type": "http",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "authenticated": true
+  },
+  {
+    "href": "/users",
+    "type": "http",
+    "methods": [
+      "GET"
+    ],
+    "authenticated": true
+  },
+  {
+    "href": "/users/{id}",
+    "type": "http",
+    "methods": [
+      "GET",
+      "PATCH"
+    ],
+    "authenticated": true
+  },
+  {
+    "href": "/users/register",
+    "type": "http",
+    "methods": [
+      "POST"
+    ],
+    "authenticated": false
+  },
+  {
+    "href": "/users/login",
+    "type": "http",
+    "methods": [
+      "POST"
+    ],
+    "authenticated": false
+  },
+  {
+    "href": "/users/me",
+    "type": "http",
+    "methods": [
+      "GET",
+      "PATCH"
+    ],
+    "authenticated": true
+  }
+]
