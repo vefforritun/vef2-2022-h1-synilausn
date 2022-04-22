@@ -23,7 +23,7 @@ Til að testa ws tengingu:
 * Tengjast WS fyrir client
   * `wss://vef2-2022-h1-synilausn.herokuapp.com/orders/<ORDER UID>`
 * Breyta stöðu á pöntun sem admin
-  * `POST https://vef2-2022-h1-synilausn.herokuapp.com/orders/<ORDER UID>`
+  * `POST https://vef2-2022-h1-synilausn.herokuapp.com/orders/<ORDER UID>/status`
   * `{ "status": "PREPARE" }`
 * Sjá nýja stöðu koma inn á pöntunar WS
 
